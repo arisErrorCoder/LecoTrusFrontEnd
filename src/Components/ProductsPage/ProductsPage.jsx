@@ -24,7 +24,7 @@ const ProductsPage = () => {
 
   const [mainImage, setMainImage] = useState(`${url}/images/${images[0]}`);
   const [zoomed, setZoomed] = useState(false);
-  const [currency, setCurrency] = useState('USD');
+  const [currency, setCurrency] = useState('INR');
   const [selectedSize, setSelectedSize] = useState('');
   const [showSharePrompt, setShowSharePrompt] = useState(false);
   const [showSizeChart, setShowSizeChart] = useState(false);

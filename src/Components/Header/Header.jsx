@@ -90,9 +90,9 @@ const Header = ({ setShowLogin }) => {
                     </div>
                     }
               </div>
-              <div className="wishlist-icon-container">
+              {/* <div className="wishlist-icon-container">
                 <FontAwesomeIcon icon={faRegularHeart} />
-              </div>
+              </div> */}
               <Link to="/cart">
                 <div className="cart-icon-container">
                   <FontAwesomeIcon icon={faBagShopping} />
@@ -125,7 +125,7 @@ const Header = ({ setShowLogin }) => {
         /></Link>
         <div className={`cart-container ${scrolled ? 'scrolled-cart-container' : ''}`}>
           <div className="profile-icon-container">
-          {!token?<button className='login-in'onClick={()=>setShowLogin(true)}> Log IN</button>:
+          {!token?<button className='login-in'style={{padding:"5px 10px", color:"white", background:"black", border:"none", borderRadius:"5px"}}onClick={()=>setShowLogin(true)}> Log IN</button>:
                     <div className='navbar-profile'>
                       <img className="nav-profile-icon"src={user} alt="image" />
                         <ul className='nav-profile-dropdown'>
@@ -136,9 +136,9 @@ const Header = ({ setShowLogin }) => {
                     </div>
                     }
           </div>
-          <div className="wishlist-icon-container">
+          {/* <div className="wishlist-icon-container">
             <FontAwesomeIcon icon={faRegularHeart} />
-          </div>
+          </div> */}
           <Link to="/cart">
                 <div className="cart-icon-container">
                   <FontAwesomeIcon icon={faBagShopping} />
@@ -169,9 +169,9 @@ const Header = ({ setShowLogin }) => {
           </div>
           <div className="extra-menu">
             <FaUser style={{ color: "black" }} />
-            <div className="wishlist-icon-container">
+               {/* <div className="wishlist-icon-container">
               <FontAwesomeIcon icon={faRegularHeart} />
-            </div>
+            </div> */}
             <div className="cart-icon-container">
               <FontAwesomeIcon icon={faBagShopping} />
             </div>

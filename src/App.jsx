@@ -34,6 +34,7 @@ import WriteToUs from './pages/WriteToUs';
 import Invoice from './pages/Invoice';
 import DropdownSection from './Components/DropdownSection/DropdownSection';
 import MultiImageSlider from './Components/RecentlyViewed/MultiImageSlider';
+import Login from './Components/LoginIn/Login';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -54,6 +55,7 @@ const App = () => {
           <Route path="/women" element={<WomenPage />} />
           <Route path="/kids" element={<KidsPage />} />
           <Route path="/payment" element={<PaymentPage />} />
+         <Route path="/login" element={<Login setShowLogin={setShowLogin}/>} />
           <Route path="/products/:id" element={
             <>
               <ProductsPage />

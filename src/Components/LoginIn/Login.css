@@ -1,6 +1,6 @@
 .login-popup{
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
     height: 100%;
     background-color: #000000d3;
@@ -68,7 +68,8 @@ font-size: 50px;
     
 }
 .Toastify__toast-container {
-    z-index: 110; /* Ensure it's above other elements */
+    z-index: 999; /* Ensure it's above other elements */
+    margin-top: 2%;
 }
 
 .Toastify__toast {
@@ -84,4 +85,18 @@ font-size: 50px;
 
 .Toastify__toast--error {
     background-color: red;
+}
+
+
+@media (max-width:430px) {
+    .Toastify__toast {
+        background-color: #333;
+        color: #fff;
+        width: 80%;
+        font-size: 14px;
+        margin-top: 50px;
+        margin-left: 20px;
+        padding: 10px; /* Adjust padding if needed */
+    }
+    
 }
