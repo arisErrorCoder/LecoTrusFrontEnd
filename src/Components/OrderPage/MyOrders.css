@@ -1,0 +1,166 @@
+
+
+.container {
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.order-filter {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.order-header {
+  background-color: #17070c;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-header h2 {
+  font-size: 1.5em;
+}
+
+.order-header .order-date {
+  font-size: 0.9em;
+}
+
+.order-body {
+  padding: 20px;
+}
+
+.product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.product-details {
+  flex-grow: 1;
+}
+
+.product-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-quantity, .product-price {
+  font-size: 1em;
+  color: #5b1616;
+}
+
+.order-footer {
+  background-color: #f9f9f9;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ddd;
+}
+
+.shipping-progress {
+  flex-grow: 1;
+}
+
+.shipping-progress span {
+  font-size: 1em;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #260d97;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.total-price {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.track-order-btn, .view-details-btn {
+  background-color: #16975f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.track-order-btn:hover, .view-details-btn:hover {
+  background-color: #e0356e;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.page-link {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 8px;
+  background-color: #120107;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.page-link:hover {
+  background-color: #e0356e;
+}

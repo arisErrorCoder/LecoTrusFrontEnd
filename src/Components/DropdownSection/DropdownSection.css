@@ -1,0 +1,100 @@
+.dropdown-section-wrapper {
+    background-color:rgba(237, 227, 227, 0.948);
+    border-radius: 15px;
+    padding: 50px;
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center the component */
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .dropdown-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 250px; /* Adjust width as needed */
+  }
+  
+  .dropdown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between dropdowns */
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid rgba; /* Add line separator */
+  }
+  
+  .dropdown:last-child {
+    border-bottom: none; /* Remove line for the last item */
+  }
+  
+  .dropdown-heading-item {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full width for the container */
+    background-color: rgba;
+    color: rgb(53, 51, 51);
+    border: 1px solid rgba;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .dropdown-heading-item span {
+    flex: 1; /* Take up available space */
+  }
+  
+  .dropdown-heading-item .icon {
+    margin-left: auto; /* Push the icon to the right */
+  }
+  
+  .dropdown-details {
+    flex: 1;
+    margin-left: 20px; /* Space between dropdowns and details */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-content {
+    padding: 10px;
+    border: 1px solid rgba;
+    background-color:rgba;
+    color: rgb(53, 51, 51);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    .dropdown-section-wrapper {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .dropdown-content-wrapper {
+      width: 100%;
+      position: relative;
+      top: 100%; /* Position it below the heading */
+      left: 0;
+    }
+  
+    .dropdown-heading-item {
+      font-size: 15px; /* Adjust font size for mobile */
+    }
+  
+    .dropdown-content {
+      width: 100%; /* Full width under the heading */
+      padding: 15px; /* Adjust padding for mobile */
+    }
+    .dropdown-content {
+      padding: 10px;
+      border: 1px solid rgba;
+      background-color:rgba;
+      color: rgb(53, 51, 51);
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;;
+      gap: 20px;
+    }
+  }

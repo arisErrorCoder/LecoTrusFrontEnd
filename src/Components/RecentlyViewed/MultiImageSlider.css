@@ -1,0 +1,63 @@
+/* MultiImageSlider.css */
+
+.slider-container1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.slider1 {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-container1 {
+  display: flex;
+  transition: transform 0.5s ease;
+  column-gap: 10px;
+}
+
+.image-container1 img {
+  width: 20%; /* 100% / 5 images = 20% */
+  flex-shrink: 0;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  border: none;
+  color: rgb(1, 1, 1);
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.arrow-button.prev {
+  left: 0;
+}
+
+.arrow-button.next {
+  right: 0;
+}
+.slider-container1 h3{
+  font-size: 40px;
+  text-align-last: center;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .slider-container1 h3{
+    font-size: 20px;
+}
+.image-container1 img {
+  width: 40%; /* 100% / 5 images = 20% */
+  flex-shrink: 0;
+  height: auto; /* Maintain aspect ratio */
+}
+}

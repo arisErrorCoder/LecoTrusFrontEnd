@@ -1,0 +1,87 @@
+.login-popup{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d3;
+    display: grid;
+}
+.login-popup-conatainer{
+    place-self: center;
+    width: max(23vw,330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIN 0.5S;
+}
+.login-popup-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+}
+.login-popup-title .closebar{
+cursor: pointer;
+width: 20px;
+font-size: 50px;
+}
+
+.login-popup-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-popup-inputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.login-popup-inputs button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+.login-pop-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-pop-condition input{
+    margin-top: 5px;
+}
+.login-popup p span {
+    color: blue;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.Toastify__toast-container {
+    z-index: 110; /* Ensure it's above other elements */
+}
+
+.Toastify__toast {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px; /* Adjust padding if needed */
+}
+
+.Toastify__toast--success {
+    background-color: green;
+}
+
+.Toastify__toast--error {
+    background-color: red;
+}

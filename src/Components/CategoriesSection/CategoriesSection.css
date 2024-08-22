@@ -1,0 +1,97 @@
+.categories-section {
+    padding: 20px;
+    margin-top: 25px;
+}
+  
+.product-gridd {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Align images horizontally */
+    gap: 20px;
+    padding-top:50px;
+}
+
+
+  
+.product-itemm {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+  
+.product-imagee {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure the image container takes full width */
+    
+}
+  .product-imagee p{
+    position: absolute;
+    bottom: 8px;
+    color: rgb(249, 249, 249);
+    text-transform: uppercase;
+    font-size: 20px;
+    left: 35%;
+    z-index: 880;
+  }
+.product-imagee img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+.categories-section h1{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color:black;
+}
+.categories-section h5{
+    color: rgba(131, 120, 120, 0.845);
+    text-align: center;
+    padding: 15px 0px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+  
+.overlay p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+  
+.product-itemm:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+@media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoints */
+    .product-gridd {
+        grid-template-columns: repeat(2, 1fr); /* Display two images per row on mobile */
+    }
+    .categories-section{
+        padding: 0px;
+    }
+    .categories-section h1{
+        color: black;
+        font-size: 20px;
+        text-align: center;
+    }
+    .categories-section h2{
+        color: rgb(192, 179, 179);
+        font-size: 15px;
+        text-align: center;
+    }
+    .product-imagee p{
+        font-size: 10px;
+      }
+}

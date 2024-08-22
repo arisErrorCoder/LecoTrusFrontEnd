@@ -1,0 +1,22 @@
+.image-container{
+    margin-top: 15px;
+}
+  
+  .image-wrapper img {
+    width: 100%;
+  }
+  
+
+  @media (max-width:450px) {
+
+    .image-container{
+      width: 100%;
+  }
+
+    .image-wrapper img {
+     aspect-ratio: 375 / 562;
+     object-fit: cover;
+
+    }
+    
+  }
